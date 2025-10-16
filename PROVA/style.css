@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f6f2;
+  color: #2e2e2e;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #88522d;
+  color: white;
+  padding: 10px 30px;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #aa8872;
+}
+
+nav a.ativo {
+  font-weight: bold;
+  color: #aa8872;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #e2cfc3;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #88522d;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #88522d;
+}
+
+/* Animação do título */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Destaques */
+.destaques {
+  text-align: center;
+  padding: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 25%;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Sobre Nós */
+.sobre {
+  padding: 50px;
+  text-align: center;
+}
+
+.sobre-bloco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.sobre-bloco.inverso {
+  flex-direction: row-reverse;
+}
+
+.sobre-bloco img {
+  width: 45%;
+  border-radius: 10px;
+}
+
+.sobre-bloco .texto {
+  width: 45%;
+  text-align: left;
+}
